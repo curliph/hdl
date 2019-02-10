@@ -123,9 +123,9 @@ module axi_adc_trigger #(
   wire         [31:0]    trigger_delay;
 
   wire signed  [15-SB:0] data_a_cmp;
-  wire         [15:0]    data_b_cmp;
+  wire         [15-SB:0] data_b_cmp;
   wire signed  [15-SB:0] limit_a_cmp;
-  wire         [15:0]    limit_b_cmp;
+  wire         [15-SB:0] limit_b_cmp;
 
   wire                  comp_low_a_s; // signal is over the limit
   wire                  comp_low_b_s; // signal is over the limit
